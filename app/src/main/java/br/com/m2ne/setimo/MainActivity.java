@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private EditText mensagem;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void mostrarMensagem(View v){
-        visualizar.setText(mensagem.getText().toString());
+        Toast.makeText(this, mensagem.getText().toString(), Toast.LENGTH_SHORT).show();
+        //visualizar.setText(mensagem.getText().toString());
     }
 }
