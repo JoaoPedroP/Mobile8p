@@ -17,7 +17,7 @@
     <LinearLayout
         android:layout_below="@id/txt1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
         <EditText
             android:id="@+id/edmensagem"
@@ -31,15 +31,18 @@
             android:text="Enviar"
             android:onClick="mostrarMensagem"/>
 
-        <TextView
-            android:id="@+id/txtretorno"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:textAlignment="center"
 
-            />
+        <ListView
+            android:id="@+id/lista"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+
     </LinearLayout>
+
+
 
 
 
